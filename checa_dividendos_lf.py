@@ -44,7 +44,7 @@ def envia_email(html):
     html_email = MIMEText(html, 'html')
 
     msgRoot.attach(html_email)
-    smtp.sendmail("root@vmi232710.contaboserver.net", "robson.koji@gmail.com", msgRoot.as_string())
+    smtp.sendmail("sf@b3ircalc.online", "robson.koji@gmail.com", msgRoot.as_string())
 
 
 def get_emp_list():
@@ -165,4 +165,3 @@ for emp in emp_list:
         boas_html += "<p>" + str(emp['dividendo']) + "</p>"
 
 envia_email(boas_html)
-

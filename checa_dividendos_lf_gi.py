@@ -45,7 +45,7 @@ def envia_email():
     html = MIMEText(open(arquivo_saida, 'r').read(), "html", "utf-8")
     msgRoot.attach(html)
 
-    smtp.sendmail("root@vmi232710.contaboserver.net", "robson.koji@gmail.com", msgRoot.as_string())
+    smtp.sendmail("sf@b3ircalc.online", "robson.koji@gmail.com", msgRoot.as_string())
 
 
 def get_emp_lf():
@@ -121,7 +121,7 @@ def get_emp_gi(empresas):
                 boas[emp] = {'dy':dy, 'conteudo':boas_conteudo}
         except Exception as e:
             print e
-            pass 
+            pass
 
     str_email = ''
 
